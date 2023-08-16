@@ -1,8 +1,8 @@
 class Leo < Formula
   desc "Advanced compiler and language for zero-knowledge applications on Aleo"
   homepage "https://www.aleo.org/"
-  url "https://github.com/AleoHQ/leo/archive/refs/tags/v1.9.2.zip"
-  sha256 "6fea44d9084d1af3f4d99e4f16ef4f4db9eed03f4a17802bcf9d992f36cfb06d"
+  url "https://github.com/AleoHQ/leo/archive/refs/tags/v1.9.3.zip"
+  sha256 "c78c138d00fba5184aaf0a1338ce22a333213f3f57f3086e63efa425dd0f9330"
   license "GPL-3.0-only"
 
   depends_on "rust" => :build
@@ -12,6 +12,6 @@ class Leo < Formula
   end
 
   test do
-    assert_match "leo v1.9.2", shell_output("#{bin}/leo --version")
+    assert_match "leo v1.9.3", shell_output("#{bin}/leo --version")
   end
 end
